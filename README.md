@@ -4,8 +4,11 @@
 Sonrasında ben /usr/local/bin içerisine attım sizde saklamak istediğiniz.Dizine alarm scriptimizi atın.
 sonrasında
 chmod komutu ile kullanıcımıza alarm scriptini çalıştırma execute etme yetkisi verelim.
+
 sudo chmod +x alarm 
+
 vim , vi yada nano gibi bir editör aracı ile alarm scriptimizi açalım 
+
 sudo vim alarm
 
 Karşımıza aşağıdaki değerlere sahip bir bash script dökümanı gelicektir.Aşağıda belirtilen #Portföy yazılı kısımda hisse senedi kısaltmaları örn;AKBNK,GARAN,TUKAS yazılı kısımlara takip etmek istediğiniz hisselerin kısaltmalarını yazınız.
@@ -135,7 +138,9 @@ fi
 
 
 Scriptteki düzenlemeler tamamlandıktan sonra scriptin her dakika çalışması için crontab işlemleri yapılmalıdır.
-sudo crontab -e  yazılarak aşağıdaki gibi crontab içeriği düzenlenebilir.ilk açılışta crontab bize dosyayı hangi editör ile açmak istediğimizi sorar ben vim editörünü seçtiğim için benim düzenlemem için vim editörü ile açıldı sonrasında en son satıra gelinerek her dakika çalışmasını istediğim için * * * * * yıldızları konulur ve düzenlediğiniz alarm scripti nerede ise * * * * * /usr/local/bin/alarm olacak şekilde crontaba eklenir ve kaydedilip çıkılır.
+
+sudo crontab -e  
+yazılarak aşağıdaki gibi crontab içeriği düzenlenebilir.ilk açılışta crontab bize dosyayı hangi editör ile açmak istediğimizi sorar ben vim editörünü seçtiğim için benim düzenlemem için vim editörü ile açıldı sonrasında en son satıra gelinerek her dakika çalışmasını istediğim için * * * * * yıldızları konulur ve düzenlediğiniz alarm scripti nerede ise * * * * * /usr/local/bin/alarm olacak şekilde crontaba eklenir ve kaydedilip çıkılır.
 
 # Edit this file to introduce tasks to be run by cron.
 # 
@@ -163,4 +168,3 @@ sudo crontab -e  yazılarak aşağıdaki gibi crontab içeriği düzenlenebilir.
 * * * * * /usr/local/bin/alarm 
 
 Sonrasında her dakika  arka planda çalışacak ve istenilen değerler sağlandığında ekranın sol üst köşesinde hangi hissenin hangi hedef fiyata ulaştığına dair bir bilgilendirme mesajı yazılacaktır.Terminal ekranının açık olmasına gerek kalmadan bizi bu konuda bilgilendirecektir.
-~                                                                                                                                                                 
