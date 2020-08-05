@@ -13,7 +13,9 @@ Karşımıza aşağıdaki değerlere sahip bir bash script dökümanı gelicekti
 
 
 #!/bin/bash
+
 #Portföy
+
 h1=AKBNK
 h2=GARAN
 h3=TUKAS
@@ -23,7 +25,9 @@ h6=IHGZT
 h7=SMART
 h8=PAPIL
 h9=ASELS
+
 #Hedef Fiyat
+
 z1=610
 z2=840
 z3=940
