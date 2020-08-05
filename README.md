@@ -67,13 +67,21 @@ a9=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep
 #printf "$h1 $a1 \n$h2 $a2\n$h3 $a3\n$h4 $a4\n$h5 $a5\n$h6 $a6\n$h7 $a7\n$h8 $a8\n$h9 $a9\n"
 
 b1=$(echo "$a1 * 100" | bc | cut -d '.' -f1)
+
 b2=$(echo "$a2 * 100" | bc | cut -d '.' -f1)
+
 b3=$(echo "$a3 * 100" | bc | cut -d '.' -f1)
+
 b4=$(echo "$a4 * 100" | bc | cut -d '.' -f1)
+
 b5=$(echo "$a5 * 100" | bc | cut -d '.' -f1)
+
 b6=$(echo "$a6 * 100" | bc | cut -d '.' -f1)
+
 b7=$(echo "$a7 * 100" | bc | cut -d '.' -f1)
+
 b8=$(echo "$a8 * 100" | bc | cut -d '.' -f1)
+
 b9=$(echo "$a9 * 100" | bc | cut -d '.' -f1)
 
 if [ $b1 -gt $z1 ];then
