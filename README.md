@@ -54,14 +54,23 @@ z8=1650
 
 z9=2000
 
+
 a1=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h1 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
+
 a2=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h2 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
+
 a3=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h3 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
+
 a4=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h4 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
+
 a5=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h5 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
+
 a6=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h6 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
+
 a7=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h7 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
+
 a8=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h8 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
+
 a9=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h9 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
 
 #printf "$h1 $a1 \n$h2 $a2\n$h3 $a3\n$h4 $a4\n$h5 $a5\n$h6 $a6\n$h7 $a7\n$h8 $a8\n$h9 $a9\n"
