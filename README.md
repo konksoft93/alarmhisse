@@ -33,6 +33,7 @@ z6=400
 z7=800
 z8=1650
 z9=2000
+
 a1=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h1 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
 a2=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h2 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
 a3=$(curl -kis https://uzmanpara.milliyet.com.tr/canli-borsa/?Endex=XUTUM | grep h_td_fiyat_id_$h3 | cut -d ">" -f2 | cut -d "<" -f1 | sed 's/,/./')
